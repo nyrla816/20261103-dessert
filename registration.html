@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>사전등록 | 달콤한 하루</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/registration.css"><script src="js/registration.js" defer></script></head>
+<body class="registration-page">
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">달</span><span>달콤한 하루<small>JINJU SWEET DAY</small></span></a><a class="text-link" href="index.html">← 메인으로 돌아가기</a></header>
+<main class="registration-wrap">
+  <div class="registration-heading"><div class="section-label">WELCOME TO SWEET DAY</div><h1>달콤한 하루에<br><em>초대합니다!</em></h1><p>아래 정보를 입력하고 나만의 달콤한 주말을 예약해 보세요.</p></div>
+  <form id="registrationForm" class="registration-form">
+    <div class="form-row"><label for="name">이름 <b>*</b></label><input id="name" name="name" type="text" placeholder="이름을 입력해 주세요" required></div>
+    <div class="form-row"><label for="phone">연락처 <b>*</b></label><input id="phone" name="phone" type="tel" placeholder="010-0000-0000" pattern="01[016789]-?[0-9]{3,4}-?[0-9]{4}" required></div>
+    <div class="form-row"><label for="visitDate">방문 날짜 <b>*</b></label><select id="visitDate" name="visitDate" required><option value="">날짜를 선택해 주세요</option><option>5월 15일 (토)</option><option>5월 16일 (일)</option></select></div>
+    <div class="form-row"><label for="people">방문 인원 <b>*</b></label><select id="people" name="people" required><option value="">인원을 선택해 주세요</option><option>1명</option><option>2명</option><option>3명</option><option>4명</option><option>5명 이상</option></select></div>
+    <div class="form-row"><label for="programChoice">신청 프로그램</label><select id="programChoice" name="programChoice"><option>일반 관람</option><option>베이킹 원데이 클래스</option><option>달콤 시식 체험</option><option>베이킹 클래스 + 시식 체험</option></select></div>
+    <div class="form-row"><label for="session">희망 회차</label><select id="session" name="session"><option>선택 안 함</option><option>11:30 시식 체험</option><option>12:00 베이킹 클래스</option><option>13:30 시식 체험</option><option>14:00 베이킹 클래스</option><option>15:30 시식 체험</option><option>16:00 버스킹 공연</option></select></div>
+    <label class="agree"><input type="checkbox" required> 개인정보 수집 및 이용에 동의합니다. <b>*</b></label>
+    <button class="btn btn-dark submit-btn" type="submit">신청 내용 확인하기 ↗</button>
+    <p class="form-note">※ 제작 연습용 데모 페이지입니다. 입력 정보는 서버로 전송되거나 저장되지 않습니다.</p>
+  </form>
+</main>
+<div class="success-modal" id="successModal" aria-hidden="true"><div class="success-card"><div class="success-icon">✓</div><h2>신청이 접수되었어요!</h2><p id="successMessage">달콤한 하루에서 만나요.</p><button type="button" class="btn btn-dark" id="closeSuccess">확인</button></div></div>
+<footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">달</span><span>달콤한 하루<small>JINJU SWEET DAY</small></span></a><small>© 2027 SWEET DAY. DEMO WEBSITE FOR PRACTICE.</small></footer>
+</body></html>
